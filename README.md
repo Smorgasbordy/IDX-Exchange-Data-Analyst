@@ -13,8 +13,8 @@ Week One focuses on combining the monthly listing and sold datasets into two lar
 * Compute row counts after every change.
 * Create a new csv for both of the filtered and aggregated "listings" and "sold" datasets.
 
-## Week Two:
-Week Two is about investigating the structure of the dataset, with a focus on understanding distributions of key features.
+## Weeks Two - Three:
+Weeks Two and Three are about investigating the structure of the dataset, with a focus on understanding distributions of key features.
 
 ### Tasks:
 * Calculate count and percentage of null data in each column.
