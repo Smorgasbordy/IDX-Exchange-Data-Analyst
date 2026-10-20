@@ -12,8 +12,9 @@ Week One focuses on combining the monthly listing and sold datasets into two lar
 * Filter the datasets to PropertyType == "Residential" only.
 * Compute row counts after every change.
 * Create a new csv for both of the filtered and aggregated "listings" and "sold" datasets.
+* Deliverable: IDX_DA_Week_1.ipynb
 
-## Weeks Two - Three:
+## Weeks Two:
 Weeks Two and Three are about investigating the structure of the dataset, with a focus on understanding distributions of key features.
 
 ### Tasks:
@@ -21,3 +22,25 @@ Weeks Two and Three are about investigating the structure of the dataset, with a
 * Flag and handle columns with over 90% missing values.
 * Create visualizations of key numeric features: ClosePrice, ListPrice, OriginalListPrice, LivingArea, LotSizeAcres, BedroomsTotal, BathroomsTotalInteger, DaysOnMarket, and YearBuilt.
 * Flag outliers for later handling.
+* Deliverable: IDX_DA_Week_2.ipynb
+
+## Week Three:
+During week three I began some very basic feature engineering by combining the MLS dataset with mortgage rate information
+from the Federal Reserve Economic Data (FRED).
+
+### Tasks:
+* Fetch the MORTGAGE30US series from FRED.
+* Resample the week-based FRED data to monthly, so that it can be merged with the month-based MLS data.
+* Create a common key between the datasets and merge them.
+* Verify the merge was successful.
+* Deliverable: IDX_DA_Week_3.ipynb
+
+## Weeks Four-Five:
+Weeks four and five focused on more aggressive cleaning of the dataset. The objective was to handle all null values, as well as
+identify and remove data entry errors.
+
+### Tasks:
+* Remove redundant or irrelevant columns.
+* Handle missing values by dropping them, imputing them, or filling them with "Unknown."
+* Remove impossible values indicative of entry errors (such as a zipcode of 00000 or a ClosePrice of -$100).
+* Deliverable: IDX_DA_Week_4-5.ipynb
