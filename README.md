@@ -3,7 +3,7 @@
 This repository contains the code that I wrote during my Fall 2026 IDX Exchange Data Analyst Internship.
 This internship focuses on cleaning, analyzing, and visualizing MLS real estate data using Python, Pandas, and Tableau.
 
-## Week One:
+## Week One: Monthly Dataset Aggregation
 Week One focuses on combining the monthly listing and sold datasets into two large aggregate datasets for easier analysis.
 
 ### Tasks:
@@ -14,8 +14,8 @@ Week One focuses on combining the monthly listing and sold datasets into two lar
 * Create a new csv for both of the filtered and aggregated "listings" and "sold" datasets.
 * Deliverable: IDX_DA_Week_1.ipynb
 
-## Weeks Two:
-Weeks Two and Three are about investigating the structure of the dataset, with a focus on understanding distributions of key features.
+## Week Two: Dataset Structuring and Validation
+Week Two was about investigating the structure of the dataset, with a focus on understanding distributions of key features.
 
 ### Tasks:
 * Calculate count and percentage of null data in each column.
@@ -24,7 +24,7 @@ Weeks Two and Three are about investigating the structure of the dataset, with a
 * Flag outliers for later handling.
 * Deliverable: IDX_DA_Week_2.ipynb
 
-## Week Three:
+## Week Three: Mortgage Rate Enrichment
 During week three I began some very basic feature engineering by combining the MLS dataset with mortgage rate information
 from the Federal Reserve Economic Data (FRED).
 
@@ -35,12 +35,12 @@ from the Federal Reserve Economic Data (FRED).
 * Verify the merge was successful.
 * Deliverable: IDX_DA_Week_3.ipynb
 
-## Weeks Four-Five:
+## Weeks Four-Five: Data Cleaning and Preparation
 Weeks four and five focused on more aggressive cleaning of the dataset. The objective was to handle all null values, as well as
 identify and remove data entry errors.
 
 ### Tasks:
 * Remove redundant or irrelevant columns.
-* Handle missing values by dropping them, imputing them, or filling them with "Unknown."
+* Handle missing values by dropping them, imputing them, or flagging them with "Unknown."
 * Remove impossible values indicative of entry errors (such as a zipcode of 00000 or a ClosePrice of -$100).
 * Deliverable: IDX_DA_Week_4-5.ipynb
