@@ -44,3 +44,11 @@ identify and remove data entry errors.
 * Handle missing values by dropping them, imputing them, or flagging them with "Unknown."
 * Remove impossible values indicative of entry errors (such as a zipcode of 00000 or a ClosePrice of -$100).
 * Deliverable: IDX_DA_Week_4-5.ipynb
+
+## Week Six: Feature Engineering and Market Metrics
+This week was about engineering key market features. Once these features were created, segment analysis was performed so that property selling trends could be analyzed across several features. Additionally, improve school district information was joined with the MLS data.
+
+### Tasks:
+* Create the market metric features: OriginPriceRatio, PriceRatio, PricePerSquareFoot, YearMonth, ListToContract, and ContractToClose.
+* Use property longitude and latitude to join the MLS data with the California School District Areas 2024-25 dataset (https://data.ca.gov/@california-department-of-education/california-school-district-areas-2024-25).
+* Using the new metrics, perform segment analysis on PropertySubType, CountyOrParish, MLSAreaMajor, ListOfficeName, and BuyerOfficeName.
