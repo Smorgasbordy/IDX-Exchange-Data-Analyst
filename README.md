@@ -52,3 +52,14 @@ This week was about engineering key market features. Once these features were cr
 * Create the market metric features: OriginPriceRatio, PriceRatio, PricePerSquareFoot, YearMonth, ListToContract, and ContractToClose.
 * Use property longitude and latitude to join the MLS data with the California School District Areas 2024-25 dataset (https://data.ca.gov/@california-department-of-education/california-school-district-areas-2024-25).
 * Using the new metrics, perform segment analysis on PropertySubType, CountyOrParish, MLSAreaMajor, ListOfficeName, and BuyerOfficeName.
+
+## Week Seven: Outlier Detection and Data Quality
+The datasets have a very noticeable right skew, with massive outliers making some of our median/mean metrics larger than we would expect them to be. In order to perform more accurate analysis of our dataset, we need to remove its outliers. This week focused on handling outliers by first flagging them with the IQR rule, and then creating informed cutoff points by investigating their distributions using percentiles and histograms. The datasets were then split into two versions of themselves: one dataset where outliers are flagged but not dropped, and one where outliers are dropped according to a custom rule.
+
+### Tasks:
+* Investigate each key numeric field and flag outliers according to the IQR rule.
+* Check the 0.03 and 0.97 percentile values of each feature and compare these to the IQR cutoffs.
+* Create a histogram to visualize the distribution of outliers.
+* Use the IQR cutoffs, the percentile values, and the histograms to create outlier cutoff points for each feature. Create a separate dataset where outliers are dropped according to these informed cutoffs.
+* Create a summary table of the datasets' sizes and median values before and after filtering.
+* Deliverable: IDX_DA_Week_7.ipynb
